@@ -4,15 +4,23 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WebApiTask.Models;
 
 namespace WebApiTask.Controllers
 {
     public class ValuesController : ApiController
     {
-        // GET api/values
-        public IEnumerable<string> Get()
+        private ContactsService service;
+
+        public ValuesController()
         {
-            return new string[] { "value1", "value2" };
+            this.service = new ContactsService();
+        }
+
+        // GET api/values
+        public List<Contact> GetContacts()
+        {
+            return service.GetAll();
         }
 
         // GET api/values/5
