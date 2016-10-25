@@ -27,6 +27,7 @@ F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\System.Web.Razor.xml
 F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\System.Web.WebPages.xml
 F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\System.Web.WebPages.Deployment.xml
 F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\System.Web.WebPages.Razor.xml
-F:\WebApiBrilliance\WebApiTask\WebApiTask\obj\Debug\WebApiTask.csprojResolveAssemblyReference.cache
 F:\WebApiBrilliance\WebApiTask\WebApiTask\obj\Debug\WebApiTask.dll
 F:\WebApiBrilliance\WebApiTask\WebApiTask\obj\Debug\WebApiTask.pdb
+F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\log4net.dll
+F:\WebApiBrilliance\WebApiTask\WebApiTask\bin\log4net.xml

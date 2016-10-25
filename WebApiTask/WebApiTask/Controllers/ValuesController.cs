@@ -11,6 +11,7 @@ namespace WebApiTask.Controllers
     public class ValuesController : ApiController
     {
         private ContactsService service;
+        log4net.ILog logger = log4net.LogManager.GetLogger(typeof(ValuesController));  //Declaring Log4Net  
 
         public ValuesController()
         {
@@ -20,7 +21,20 @@ namespace WebApiTask.Controllers
         // GET api/values
         public List<Contact> GetContacts()
         {
-            return service.GetAll();
+            List<Contact> contacts = new List<Contact>();
+
+            logger.Info("Fetching list of contacts");
+            try
+            {
+                contacts = service.GetAll();
+                logger.Info("Fetched list of contacts");
+           
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex.ToString());
+            }
+            return contacts;
         }
 
         // GET api/values/5

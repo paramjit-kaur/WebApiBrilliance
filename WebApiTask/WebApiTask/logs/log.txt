@@ -1,0 +1,5 @@
+INFO  2016-10-25 17:03:45,548  4020ms ValuesController       GetContacts        - Fetching list of contacts
+ERROR 2016-10-25 17:03:50,387  8859ms ValuesController       GetContacts        - System.DivideByZeroException: Attempted to divide by zero.
+   at WebApiTask.Controllers.ValuesController.GetContacts() in f:\WebApiBrilliance\WebApiTask\WebApiTask\Controllers\ValuesController.cs:line 32
+INFO  2016-10-25 17:05:27,073  3127ms ValuesController       GetContacts        - Fetching list of contacts
+INFO  2016-10-25 17:05:27,094  3148ms ValuesController       GetContacts        - Fetched list of contacts
